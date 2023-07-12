@@ -1,6 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe Project, type: :model do
+  describe 'factory' do
+    let(:project) { create(:project) }
+
+    it { expect(project.valid?).to be_truthy }
+  end
+
   describe "columns" do
     it { is_expected.to have_db_column(:name)}
     it { is_expected.to have_db_column(:link)}
