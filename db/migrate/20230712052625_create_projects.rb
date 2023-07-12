@@ -5,6 +5,7 @@ class CreateProjects < ActiveRecord::Migration[7.0]
       t.string :link
       t.string :repository_link
       t.string :description
+      t.index :name
 
       t.timestamps
     end
