@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :project do
-    name { "MyString" }
-    link { "MyString" }
-    repository_link { "MyString" }
-    description { "MyString" }
+    name { Faker::App.name }
+    link { Faker::Company.logo }
+    repository_link { Faker::Company.logo }
+    description { Faker::Company.catch_phrase }
   end
 end
