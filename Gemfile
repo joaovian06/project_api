@@ -28,6 +28,7 @@ end
 
 group :test do
   gem 'shoulda-matchers', '~> 5.0'
+  gem 'rspec-api-matchers', '~> 0.6.0'
 end
 
 group :development do
